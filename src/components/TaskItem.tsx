@@ -6,6 +6,8 @@ export type Task = {
     status: string
 }
 
+export const DONE = 'Done'
+
 type Props = {
     task: Task,
     onDelete: (id: number) => void,
@@ -19,7 +21,7 @@ const TaskItem = ({ task, onDelete, onCheck }: Props) => {
             <div>{task.text}</div>
             <div>{task.status}</div>
             <div className='action'>
-                {task.status !== 'Done' && (
+                {task.status !== DONE && (
                     <>
                         <button className='btn btn-success' onClick={() => onCheck(task.id)}><FaRegCheckSquare /></button>
                         <span className='button-divider'>|</span>
