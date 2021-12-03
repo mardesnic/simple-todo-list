@@ -1,0 +1,40 @@
+.tasks-wrapper {
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: minmax(50px, auto) 1fr 1fr 120px max-content;
+}
+
+.heading {
+    font-weight: bold;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.grid div {
+    padding: 8px;
+    text-align: left;
+    align-items: center;
+}
+
+.grid div.action {
+    text-align: center;
+}
+
+.grid div.action button {
+    padding: 10px 12px;
+}
+
+.grid .line {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    height: 1px;
+    padding: 0;
+    border-top: 1px solid #ddd;
+}
+
+.button-divider {
+    margin: 0 3px;
+}
